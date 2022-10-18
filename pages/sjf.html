@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+    <title> SJF Scheduling </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css"></link>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+</head>
+<body >
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="../index.html">Go back</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        </nav>
+    <br>
+	<div class="container">
+		<!-- Input section -->
+		<div class="jumbotron">
+            <h1 class="display-3">SJF Scheduling</h1>
+            <br>
+			<div id="showinput"></div>
+			<hr>
+			<div class="row">
+				<div class="form-group" style="margin-left:50px; float:left;  width: 20%">
+                    <label class="col-form-label" for="inputDefault">Arrival time:</label>
+                    <input class="form-control" id="newat" name="at" placeholder="Arrival Time" type="text" size="35">
+                </div>
+				<div class="form-group" style="margin-left:50px; float:left;  width: 20%">
+					<label class="col-form-label" for="inputDefault">Burst time:</label>
+					<input class="form-control" id="newbt" name="bt" placeholder="Burst Time" type="text" size="35">
+				</div>
+			</div>
+            <button type="submit" id="add" class="btn btn-primary" style="margin-left: 36px" onclick="addToList()">Add</button>
+			<br>
+			<button type="submit" class="btn btn-primary" style="margin-left: 36px; float: right;" onclick="clearData()">Clear Data</button>
+			<button type="submit" class="btn btn-primary" style="margin-left: 36px; float: right;" onclick="showOutput(1)">Schedule It!</button>
+		</div>
+		<!-- Gantt Chart -->
+		<div style="margin-top: 150px;">
+			<h2 id ="chart-header" style="text-align:center;"></h2>
+			<br />
+			<div id="gantt" style="width: 800px;float: left;"></div>
+			<div id="timer"></div>
+			<br /><br />
+			<div>
+				<div style="width: 50%; text-align:center;float:left; font-size: 20px;" id="awt1"></div>
+				<div style="width: 50%; text-align:center;float:left; font-size: 20px;" id="atat1"></div>
+            </div>
+        </div>
+		<br>
+		<!-- CPU Operations -->
+		<div style="margin-top: 100px;">
+			<h3 id="operations-heading" style="text-align:center;"></h3>
+			<div id="operations"></div>
+		</div>
+		<!-- Table -->
+		<div style="margin-top: 50px;">
+			<h2 id="table-heading" style="text-align:center;"></h2>
+			<div>
+				<table id="tab" class="table table-striped centered responsive-table" style="border-color: black; border-width: 2px; align: center; bgcolor: white; cellspacing: 10px;">
+					<thead id="thead"></thead>
+					<tbody id="ptable"></tbody>
+				</table>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

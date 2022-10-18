@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stimulator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+     <link rel="stylesheet" href="../css/main.css">
+    
+    <!--===============================================================================================-->
+  </head>
+  <body>
+    
+      <div class="limiter">
+       
+		<nav  class="navbar navbar-expand-lg bg-dark">
+			<div class="container-fluid">
+			  <a style="color:white ;" class="navbar-brand" href="#">Stimulator</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a style="color:white ;" class="nav-link active" aria-current="page" href="/pages/fcfs.html">FCFS</a>
+				  </li>
+				  <li class="nav-item">
+					<a style="color:white ;" class="nav-link" href="/pages/sjf.html">SJF</a>
+				  </li>
+				  <li class="nav-item">
+					<a style="color:white ;" class="nav-link" href="/pages/srtf.html">SRTF</a>
+				  </li>
+				  
+				<button class="btn btn-outline-success" type="submit">Github</button>
+			  </div>
+			</div>
+		  </nav>
+
+        <div
+          class="container-login100"
+          style="background-image: url('images/background2.jpeg') "
+        >
+          <div  class="wrap-login100 p-t-190 p-b-30">
+            <form onsubmit="return false" class="login100-form ">
+
+              <div class="card">
+                
+                <div class="card-body">
+                  <h4 style="font-weight:700 ;" class="card-title">Shortest job first</h4>
+                  <p class="card-text">
+                    In SJF scheduling, the process with the lowest burst time, among the list of available processes in the ready queue, is going to be scheduled next.
+However, it is very difficult to predict the burst time needed for a process hence this algorithm is very difficult to implement in the system.
+                  </p>
+                  <div class="container-login100-form-btn p-t-10">
+                    
+                    <button
+                      class="login100-form-btn"
+                      
+                    >
+                    <a style="text-decoration: none;color: aliceblue;" href="/pages/sjf.html">
+                      Stimulate
+                    </a>
+                    </button>
+                  
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+
+              <div class="card">
+                
+                <div class="card-body">
+                  <h4 style="font-weight:700 ;" class="card-title">First come first serve</h4>
+                  <p class="card-text">
+                    First come first serve (FCFS) scheduling algorithm simply schedules the jobs according to their arrival time. The job which comes first in the ready queue will get the CPU first. The lesser the arrival time of the job, the sooner will the job get the CPU. FCFS scheduling may cause the problem of starvation if the burst time of the first process is the longest among all the jobs.
+                  </p>
+                  <div class="container-login100-form-btn p-t-10">
+                    
+                    <button
+                      class="login100-form-btn"
+                  
+                    >
+                    <a style="text-decoration: none;color: aliceblue;" href="/pages/fcfs.html">
+                    
+                    Stimulate
+                  
+                  </a>
+                    </button>
+                  
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+
+              
+
+              <div class="card">
+                
+                <div class="card-body">
+                  <h4 style="font-weight:700 ;" class="card-title">Shortest remaining time first</h4>
+                  <p class="card-text">
+                    In SRTF, the execution of the process can be stopped after certain amount of time. At the arrival of every process, the short term scheduler schedules the process with the least remaining burst time among the list of available processes and the running process.
+                  </p>
+                  <div class="container-login100-form-btn p-t-10">
+                    <button
+                    class="login100-form-btn"
+                    
+                    >
+                    <a style="text-decoration: none;color: aliceblue;" href="/pages/srtf.html">
+                    
+                      Stimulate
+                    </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+     
+    
+  </body>
+</html>
