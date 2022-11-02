@@ -4,7 +4,7 @@ Output Url -: https://helpful-tapioca-58dfde.netlify.app/index.html
 
 ScreenShots -:
 
-![1](https://user-images.githubusercontent.com/76683360/196496927-0b358277-a3e4-4138-8187-bcf5bcb11478.jpeg)
+![Web capture_2-11-2022_21384_spontaneous-otter-22887d netlify app](https://user-images.githubusercontent.com/76683360/199550447-6ccab45a-caed-4b09-9547-96be723fd08f.jpeg)
 
 ![2](https://user-images.githubusercontent.com/76683360/196496939-16b6c4bc-a9f0-49fc-a8c4-aa8757b98e0b.jpeg)
 
