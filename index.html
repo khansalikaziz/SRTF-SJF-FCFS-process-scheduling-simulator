@@ -1,132 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Stimulator</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stimulator By Salik</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-     <link rel="stylesheet" href="../css/main.css">
-    
-    <!--===============================================================================================-->
-  </head>
-  <body>
-    
-      <div class="limiter">
-       
-		<nav  class="navbar navbar-expand-lg bg-dark">
-			<div class="container-fluid">
-			  <a style="color:white ;" class="navbar-brand" href="#">Stimulator</a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-				  <li class="nav-item">
-					<a style="color:white ;" class="nav-link active" aria-current="page" href="/pages/fcfs.html">FCFS</a>
-				  </li>
-				  <li class="nav-item">
-					<a style="color:white ;" class="nav-link" href="/pages/sjf.html">SJF</a>
-				  </li>
-				  <li class="nav-item">
-					<a style="color:white ;" class="nav-link" href="/pages/srtf.html">SRTF</a>
-				  </li>
-				  
-				<button class="btn btn-outline-success" type="submit">Github</button>
-			  </div>
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/55191.png" alt="" /></span>
+					<h1 id="logo"><a href="#">Scheduling Algorithms</a></h1>
+					<br />
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a class="icon solid fa-home" href="#one" class="active">Home</a></li>
+						<li><a class="icon solid fa-cog" href="#two">Process Scheduler</a></li>
+						<li><a class="icon solid fa-retweet" href="#three">Scheduling Algorithms</a></li>
+						<li><a class="icon solid fa-sitemap" href="#four">Developed By</a></li>
+					</ul>
+				</nav>
+				
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/vector.jpg" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>Process Scheduling Algorithms</h2>
+										<p>CPU Scheduling</p>
+									</header>
+									<p>The process of choosing which process will use the CPU while another is waiting is known as CPU scheduling. CPU scheduling's primary responsibility is to make sure that whenever the CPU is idle, the OS at least chooses one of the processes in the ready queue to be executed. The CPU scheduler will conduct the selecting process. One of the processes in memory that is prepared for execution is chosen.</p>
+
+                                    
+                                    <p>To obtain a better idea, scroll down and take a look at how processes are scheduled using various algorithms. Descriptions and tutorials are linked below.</p>
+								</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Scheduling Algorithms</h3>
+									<p>
+									Scheduling is the process in computing that assigns tasks to the resources that will complete them. Virtual computing components like threads, processes, or data flows may be used for the work, which is then scheduled onto hardware resources like processors, network links, or expansion cards. The scheduling process is carried out by a scheduler. Schedulers are frequently used to maintain all computer resources active (as in load balancing), properly divide up system resources among different users, or to reach a certain level of service quality. The idea of scheduling makes it inherent to the execution paradigm of a computer system and important to computing itself, is an integral component of a computer system's execution architecture; the idea of scheduling enables computer multitasking with a single central processor unit (CPU). The descriptions of 8 implemented algorithms are provided below.</p>
+								</p>
+									<div class="features">
+										
+                                        <article>
+                                            
+											<div class="box">
+												<h4>First Come First Serve (FCFS)</h4>
+												<p>First Come First Serve is an operating system scheduling algorithm that automatically queues requests and processes in the order they arrive. It is the simplest and simplest CPU scheduling algorithm. In this type of algorithm, the processes that request the CPU first get CPU allocation first. This is managed using a FIFO queue.</p>
+												<a href="pages/fcfs.html"><input  value="Stimulate" type="button" style="background-color:#73D7FF ;"/>
+												</a>	
+											</div>
+                                                                     
+										</article>
+										<article>
+
+											<div class="box">
+												<h4>Shortest Job First (SJF)</h4>
+												<p>Shortest job first is a scheduling policy that selects the waiting process with the shortest execution time to execute next. It is a non-preemptive and Greedy algorithm. The shortest job first has the advantage of the minimum average waiting time among all scheduling algorithms. If shorter processes keep coming, it can cause starvation.</p>
+											    <a href="pages/sjf.html"><input  value="Stimulate" type="button" style="background-color:#73D7FF ;"/>
+												</a>	
+									
+											</div>
+										</article>
+										<article>
+											
+											<div class="box">
+												<h4>Shortest Remaining Time First (SRTF)</h4>
+												<p>This algorithm is a preemptive version of SJF scheduling. In SRTF, process execution can be stopped after a certain period of time. As each process arrives, the short-term scheduler schedules the process with the smallest remaining burst time from the list of available processes and the running process.</p>
+												<a href="pages/srtf.html"><input  value="Stimulate" type="button" style="background-color:#73D7FF ;"/>
+												</a>	
+											</div>
+										</article>
+                                        
+                                        <article>
+											
+											
+										</article>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Developed by</h3>
+                                    
+                                    <p>Salik Aziz Khan</p>
+                                    
+								</div>
+							</section> 
+
 			</div>
-		  </nav>
 
-        <div
-          class="container-login100"
-          style="background-image: url('images/background2.jpeg') "
-        >
-          <div  class="wrap-login100 p-t-190 p-b-30">
-            <form onsubmit="return false" class="login100-form ">
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-              <div class="card">
-                
-                <div class="card-body">
-                  <h4 style="font-weight:700 ;" class="card-title">Shortest job first</h4>
-                  <p class="card-text">
-                    In SJF scheduling, the process with the lowest burst time, among the list of available processes in the ready queue, is going to be scheduled next.
-However, it is very difficult to predict the burst time needed for a process hence this algorithm is very difficult to implement in the system.
-                  </p>
-                  <div class="container-login100-form-btn p-t-10">
-                    
-                    <button
-                      class="login100-form-btn"
-                      
-                    >
-                    <a style="text-decoration: none;color: aliceblue;" href="/pages/sjf.html">
-                      Stimulate
-                    </a>
-                    </button>
-                  
-                  </div>
-                </div>
-              </div>
-              <br />
-              <br />
-
-              <div class="card">
-                
-                <div class="card-body">
-                  <h4 style="font-weight:700 ;" class="card-title">First come first serve</h4>
-                  <p class="card-text">
-                    First come first serve (FCFS) scheduling algorithm simply schedules the jobs according to their arrival time. The job which comes first in the ready queue will get the CPU first. The lesser the arrival time of the job, the sooner will the job get the CPU. FCFS scheduling may cause the problem of starvation if the burst time of the first process is the longest among all the jobs.
-                  </p>
-                  <div class="container-login100-form-btn p-t-10">
-                    
-                    <button
-                      class="login100-form-btn"
-                  
-                    >
-                    <a style="text-decoration: none;color: aliceblue;" href="/pages/fcfs.html">
-                    
-                    Stimulate
-                  
-                  </a>
-                    </button>
-                  
-                  </div>
-                </div>
-              </div>
-              <br />
-              <br />
-
-              
-
-              <div class="card">
-                
-                <div class="card-body">
-                  <h4 style="font-weight:700 ;" class="card-title">Shortest remaining time first</h4>
-                  <p class="card-text">
-                    In SRTF, the execution of the process can be stopped after certain amount of time. At the arrival of every process, the short term scheduler schedules the process with the least remaining burst time among the list of available processes and the running process.
-                  </p>
-                  <div class="container-login100-form-btn p-t-10">
-                    <button
-                    class="login100-form-btn"
-                    
-                    >
-                    <a style="text-decoration: none;color: aliceblue;" href="/pages/srtf.html">
-                    
-                      Stimulate
-                    </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-     
-    
-  </body>
+	</body>
 </html>
+
+
+
+										
